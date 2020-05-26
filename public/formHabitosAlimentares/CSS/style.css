@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form fieldset {
+    padding: 20px 40px;
+    border: 1px solid #ccc;
+}
+
+form legend {
+    text-align: left;
+    font-size: 17px;
+    color: rgb(130, 130, 130);
+}
+
+form input[type = text] {
+    font-family:tahoma;
+    margin-top: 30px;
+    width: 80%;
+    /* tem o tamanho de 80% do formulario, mas cresce mais devido ao padding.
+    pois nao estamos usando o box-sizing:border-box*/
+    padding: 10px 13px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+
+form input[type=text]:focus,
+form select:focus,
+form textarea:focus{
+
+    outline: none;
+}
+
+form select {
+/* o select ja vem com box-sizing: border-box por padrao. entao ele nao cresce mais pros lados e pra cima
+com o padding.
+por isso usamos essa formula calc, para q ele fique do msm tamanho que os inputs.*/
+    color: rgb(130, 130, 130);
+    width:calc(80% + 26px);
+    margin-top:30px;
+    display: inline-block;
+    padding: 10px 13px;
+    border: 1px solid #ccc
+    font-family:tahoma;
+}
+
+form select option[disabled]{
+    color: black;
+}
+
+form select option:nth-of-type(2){
+    color:red;
+}
+
+form h2 {
+    margin-top:20px;
+    color: rgb(100, 100, 100);
+}
+
+.input {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 40%;
+}
+
+.input span {
+    font-size: 16px;
+    margin-left: 13px;
+    color: rgb(130, 130, 130);
+}
+
+form input[type=submit]{
+    margin-top: 30px;
+    border: 2px solid rgb(100, 100, 100);
+    color: white;
+    background-color: rgb(130, 130, 130);
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+form input[type=submit]:hover{
+    background-color:rgb(100, 100, 100); ;
+}
+
+form textarea{
+    font-family: tahoma;
+    margin-top: 30px;
+    width: 80%;
+    height: 140px;
+    resize: none;
+    padding: 10px 13px;
+    border: 1px solid #ccc;
+}
+
+form input[type=file]{
+    display: none;
+}
+
+form label{
+    box-sizing: border-box;
+    padding-top: 25px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 2px dotted rgb(130, 130, 130);
+    max-width: 100px;
+    height:90px ;
+    cursor: pointer;
+    background-color: #ccc;
+    color: rgb(100, 100, 100)
+}

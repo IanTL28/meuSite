@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º Formulário</title>
+    <link rel="stylesheet" href="CSS/style.css"  type="text/css">
+</head>
+
+<body>
+    
+    <form>
+        <fieldset>
+
+            <legend>Pesquisa de hábitos alimentares por faixa etária e região</legend>
+
+            <input type="file" name="file" id="file">
+            <label for="file">Coloque sua foto aqui</label>
+
+            <input type="text" name="nome" placeholder="Digite o seu nome">
+            <input type="text" name="email" placeholder="Digite o seu e-mail">
+            
+            
+            <select name="idade" >
+                    <option disabled selected>Indique sua idade</option> 
+                    <option value="18">18-</option>
+                    <option value="25+">30+</option>
+                    <option value="40+">60+</option>
+            </select>
+            
+            <h2>Informe a sua região</h2>
+
+            <div class="input">
+
+            <div><input type="radio" name = "cidade" value="Norte"><span>Norte</span></div>
+            <div><input type="radio" name = "cidade" value="Nordeste"><span>Nordeste</span></div>
+            <div><input type="radio" name = "cidade" value="Sudeste"><span>Sudeste</span></div>
+            <div><input type="radio" name = "cidade" value="Sul"><span>Sul</span></div>
+
+            </div>
+
+            <h2>Marque sua preferência</h2>
+
+            <div class="input">
+            
+            <div><input type="checkbox" name="comida[]" value= "Fast Food"><span>Fast Food</span></div>
+            <div><input type="checkbox" name="comida[]" value= "Restaurante"><span>Restaurante</span></div>
+            <div><input type="checkbox" name="comida[]" value= "Comida Caseira"><span>Comida Caseira</span></div>
+
+            </div>
+
+            <div><textarea name="observacao" placeholder="Possui alguma observação?"></textarea></div>
+
+            <div><input type="submit" name="acao" value="Enviar"></div>
+
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>

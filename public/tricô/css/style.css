@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"IndieFlower" ;
+}
+
+html, body{
+    height: 100%;
+}
+
+@font-face{
+    src:url("../fonts/IndieFlower-Regular.ttf");
+    font-family: "IndieFlower";
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    width:100%;
+    padding: 0 2%;
+    height: 90px;
+    background-color: rgba(224, 224, 58, 0.699);
+}
+
+header img{
+    width: 250px;
+}
+
+.container-banner{
+    width: 100%;
+    padding: 0 2%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../images/fazendo-malha-fazer-crochê-ilustração-feito-à-mão-da-bandeira-vector-linha-agulha-do-ícone-gancho-lenço-peúgas-teste-85189827.jpg');
+}
+
+
+.form{
+    width:400px;
+    background-color:rgb(255, 160, 207);
+    height:130%;  /*altura sempre herda do elemento pai*/
+    border:8px solid  rgba(69, 231, 231, 0.863);
+    /*background-clip: padding-box; serve para dar transparencia à borda*/
+    /*background-origin: tem o msm conceito, só que para imagens*/
+    position: relative;
+    margin-top: -20px; /* retirando 20px da margin em relaçao ao header, para q ele fique por cima 20px */
+    float: right;
+}
+
+.form h2{
+    color:rgb(255, 255, 0);
+    padding: 15px 10px;
+    font-size:22px;
+    font-weight: bold;
+}
+
+.input-container{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input-container input[type=text]{
+    width: 344px;
+    height: 55px;
+    border: 4px solid rgba(69, 231, 231, 0.863);
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 11px;
+    
+}
+
+.form .input-submit-container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form input[type=submit]{
+   width: 280px;
+   height: 56px;
+   font-size: 25px;
+   background-color: rgba(255, 255, 107, 0.849) ;
+   border-bottom: 5px solid rgba(69, 231, 231, 0.863);
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   display: inline-block;
+   text-align: center;
+   outline: none;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+
+.form input[type=submit]:hover{
+    background-color: yellow;
+}
+
+.input-container span{
+    font-weight: bold;
+    color:rgb(255, 255, 0);
+    width: 100%;
+    display:inline-block;
+    text-align: left;
+    font-size: 19px;
+}
+
+form p{
+    width: 100%;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.list-banner{
+    width:519px;
+    background-color: rgba(255, 160, 207,0.7);
+    height: 270px;
+    margin-top: 100px;
+    padding: 30px;
+    float: left;
+    /*margin-left: -60px;*/
+}
+
+.list-banner ul{
+    list-style-position: inside;
+    font-weight: bold;
+}
+
+.list-banner li{
+    font-size: large;
+    padding: 20px;
+    color: rgb(223, 59, 0);
+    list-style-type: none;
+}
+
+.container-2{
+    margin-top: -67px;
+    padding: 40px 2%;
+    background-color: rgba(224, 224, 58, 0.699);
+    text-align: center;
+}
+
+.container-2 h2{
+    color: rgb(223, 59, 0);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+
+.container-2 p{
+    width:100%;
+    max-width: 780px;
+    margin:15px 0;
+    text-align: justify;
+    display: inline-block;
+    color:rgb(223, 59, 0);
+    font-size: 22px;
+}
+
+.orange{
+    position: relative; /*com position relative, posso manipular top, rigth, bottom e left*/
+
+    top:70px; /*o padding do container-2 eh de 40px, como eu botei uma top de 70, 
+              a imagem desceu os 40 do padding container-2 e ficou encostada no bottom, dpois mais 30px metade de 60 da altura dela, 
+              ficando metade para fora*/
+
+    left: 50%; /*a imagem foi 50% para a esquerda*/
+
+    margin-left: -30px;
+    width:50px;
+    height: 50px;
+
+    background-size: 100% 100%; /* a imagem original é maior do que o tamanho que defini acima, entao estou dizendo que quero pegar
+                                100% dela p largura definida e para a altura*/
+
+    background-image: url("../images/orangeball.png");
+    background-position: center;
+}
+
+.container-3{
+    padding: 90px 2%;
+}
+
+.container-3 h2{
+    margin-top: -25px;
+    color: rgb(223, 59, 0);
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-3-itens{
+    margin-top: 40px;
+    text-align:center;
+}
+
+
+.item{
+    float: left;
+    width: 33.3333%;
+    padding: 30px;
+}
+
+.item h2{
+    font-size: 22px;
+    color:rgb(223, 59, 0);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.item p{
+    color:rgb(223, 59, 0);
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer{
+    /*clear both, pq eu trabalhei com float no elemento anterior*/
+    clear: both;
+    padding: 20px 0;
+    border-top: 2px solid rgba(224, 224, 58, 0.699);
+    text-align: center;
+    color: hotpink;
+}
+
+footer p{
+    font-size: large;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px){
+
+    header{
+        width:100%;
+        text-align: center;
+        height: auto;
+        padding:15px;
+    }
+
+
+    .container-banner{
+        width: 100%;
+        height:auto;
+        text-align: center;
+    }
+
+        
+    .list-banner{
+        width:40%;
+        height: 250px;
+        margin-top: 120px;
+        padding: 30px;
+        float: left;
+        /*margin-left: -60px;*/
+    }
+
+    .list-banner li{
+        margin-left: auto;
+        font-size: medium;
+        padding: 10px;
+        color: rgb(223, 59, 0);
+        list-style-type: none;
+        text-align: left;
+    }
+  
+    .form{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-width: 400px;
+        width:60%;
+        background-clip: padding-box;
+        float: right;
+        background-color: rgba(255, 160, 207,0.9);
+       
+    }
+        
+    .input-container span{
+        text-align: center;
+    }
+
+    .input-container input[type=text]{
+        height: 55px;
+        width: 100%;
+    }
+        
+    .form input[type=submit]{
+        max-width: 280px;
+        height: 56px;
+        width: 100%;
+    }
+
+    .container-2{
+        margin-top:0;
+        padding-top: 80px;
+    }
+
+    .container-2 h2{
+        margin-top: -40px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .container-banner{
+        width: 100%;
+        padding: 0;
+        background: none;
+    }
+
+    .list-banner{
+        margin-top:20px;
+        width:100%;
+        float: none;
+        display: inline-block;
+    }
+
+    .form{
+        background-color: rgba(255, 160, 207, 1);
+        width:100%;
+        float: none;
+        display: inline-block;
+      
+    }
+        
+    .container-2 h2{
+    margin-top:-50px;
+    }
+
+    .container-2 p{
+        width: 90%;
+    }
+
+    .item{
+        float: none;
+        display: inline-block;
+        width:90%;
+        padding: 30px;
+    }
+        
+    .item h2{
+        margin-top:10px;
+    }
+
+}
+
