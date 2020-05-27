@@ -311,32 +311,40 @@ footer p{
     }
 
 }
-
+    
 @media screen and (max-width:768px) {
 
     .container-banner{
         width: 100%;
         padding: 0;
-        background: none;
     }
 
     .list-banner{
-        margin-top:20px;
+        background-color:white;
+        margin-top:0px;
         width:100%;
         float: none;
-        display: inline-block;
+        display: inline-block; 
+       
+    }
+
+    .list-banner li{
+        font-size: large;
+        padding: 20px;
+        color:red;
+        list-style-type: none;
     }
 
     .form{
         background-color: rgba(255, 160, 207, 1);
-        width:100%;
+        width:95%;
         float: none;
         display: inline-block;
-      
+        margin-bottom:none; 
     }
         
     .container-2 h2{
-    margin-top:-50px;
+        margin-top:-50px;
     }
 
     .container-2 p{
